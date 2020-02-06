@@ -4,10 +4,8 @@ const port = process.env.PORT || 3000;
 
 const routes = require('./routes/movies');
 
-// Middleware(s)
 app.use(express.json());
 
-// First route
 app.get("/", (req, res) => 
     res.send('Welcome to happy movies world !')
 );

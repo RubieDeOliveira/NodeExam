@@ -18,7 +18,7 @@ const movieSchema = new mongoose.Schema({
         type: [String], 
         required: true,
         minlength: 1,
-        menum : ['comedy', 'action', 'thriller', 'drama', 'family', 'fantasy', 'sf', 'musical', 'western']
+        enum : ['comedy', 'action', 'thriller', 'drama', 'family', 'fantasy', 'sf', 'musical', 'western']
     },
     views: {
         type: Number,
